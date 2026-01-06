@@ -1,3 +1,4 @@
+[![Docker CI](https://github.com/mahmoudelshazly55/devops-project-1/actions/workflows/docker-ci.yml/badge.svg)](https://github.com/mahmoudelshazly55/devops-project-1/actions/workflows/docker-ci.yml)
 # 🚀 DevOps Project 1 – Dockerized Nginx with CI/CD
 
 This is my first hands-on DevOps project where I built and automated a Dockerized Nginx application using GitHub Actions.
