@@ -19,11 +19,13 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
 
-      - name: Build Docker image
-        run: |
-          docker build -t mahmoud999999/devops-nginx:latest .
-
-      - name: Push Docker image
-        run: |
-          docker push mahmoud999999/devops-nginx:latest
+      - name: Build and push Docker image
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: |
+            mahmoud999999/devops-nginx:latest
+            mahmoud999999/devops-nginx:v1.0.0
+ 
 
